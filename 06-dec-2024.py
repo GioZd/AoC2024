@@ -61,7 +61,7 @@ def task_2(labmap: list[list[str]]) -> int:
     # print(steps)
     for idx, step in enumerate(steps):
         tmp = deepcopy(route)
-        tmp[first_step[0]][first_step[1]]='^'
+        tmp[first_step[0]][first_step[1]] = '^'
         y, x = step
         tmp[y][x] = 'O'
         # if idx<=2: print(tmp[:6])
